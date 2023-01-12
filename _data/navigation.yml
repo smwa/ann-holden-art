@@ -1,6 +1,8 @@
-- text: One
-  url: "#one"
-- text: Two
-  url: "#two"
-- text: Three
-  url: "#three"
+- text: Paintings
+  url: "Paintings/"
+- text: Drawings
+  url: "Drawings/"
+- text: Portraits
+  url: "Portraits/"
+- text: The Artist
+  url: "Artist/"

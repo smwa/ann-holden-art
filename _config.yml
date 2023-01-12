@@ -3,7 +3,7 @@ url: "https://skeleton.mechstack.dev" # the base hostname & protocol for your si
 
 webp:
   enabled: true
-  quality: 75
+  quality: 85
   img_dir: ["/assets/"]
   nested: true
   formats: [".jpeg", ".jpg", ".png", ".tiff", ".gif"]

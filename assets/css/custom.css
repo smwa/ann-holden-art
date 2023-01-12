@@ -1,6 +1,6 @@
 html {
     background-color: #FFFFFF;
-    color: #333333;
+    color: #212121;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -17,7 +17,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navigation-bar, .navigation-bar :link, .navigation-bar :visited {
-    color: #a5a5ff;
+    color: #212121;
 }
 
 .sections {
@@ -36,45 +36,4 @@ h1, h2, h3, h4, h5, h6 {
 
 svg {
     stroke: #2c2c2c;
-}
-
-@media (prefers-color-scheme: light) {
-    .navigation-bar img {
-        background-color: #000000;
-        border-radius: 100%;
-    }
-}
-
-@media (prefers-color-scheme: dark) {
-    html {
-        background-color: #333333;
-        color: #ffffff;
-    }
-
-    .sections a {
-        color: white;
-        border-color: white;
-    }
-
-    svg {
-        stroke: #c3c3c3;
-    }
-    
-    .navigation-bar, .navigation-bar :link, .navigation-bar :visited {
-        color: #b5b5ff;
-    }
-    
-    .sections {
-    
-    }
-    
-    /* Section */
-    .sections > * {
-    
-    }
-    
-    /* Block */
-    .sections > * > * {
-        
-    }
 }
