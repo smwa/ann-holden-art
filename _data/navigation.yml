@@ -1,8 +1,8 @@
 - text: Paintings
-  url: "Paintings/"
+  url: "/Paintings/"
 - text: Drawings
-  url: "Drawings/"
+  url: "/Drawings/"
 - text: Portraits
-  url: "Portraits/"
+  url: "/Portraits/"
 - text: The Artist
-  url: "Artist/"
+  url: "/Artist/"

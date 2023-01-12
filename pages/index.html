@@ -1,6 +1,6 @@
 ---
 permalink: /
-layout: null
+layout: default
 ---
-{% assign content-page = site.pages | where: "path", "about.html" | first %}
-{{ content-page.content }}
+{% assign contentpage = site.pages | where: "path", "pages/Paintings/index.html" | first %}
+{{ contentpage.content }}
