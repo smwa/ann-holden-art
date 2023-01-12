@@ -1,0 +1,11 @@
+- file: example-leaves.jpeg
+  title: Example Leaves
+  description: 30" x 30" Example image of leaves
+- file: example-bear.jpeg
+  title: Example Bear
+  description: 30" x 30" Example image of a bear
+  collection: In a private collection in North Carolina
+- file: logo.png
+  title: Example Bear
+  description: 30" x 30" Example image of leaves
+  collection: In a private collection in North Carolina

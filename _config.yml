@@ -1,10 +1,10 @@
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://skeleton.mechstack.dev" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://aha.mechstack.dev" # the base hostname & protocol for your site, e.g. http://example.com
 
 webp:
   enabled: true
-  quality: 85
-  img_dir: ["/assets/"]
+  quality: 75
+  img_dir: ["/assets/", "/Art/"]
   nested: true
   formats: [".jpeg", ".jpg", ".png", ".tiff", ".gif"]
   gifs: [".gif"]
@@ -21,6 +21,7 @@ plugins:
   - jekyll-target-blank
   - jekyll-webp
   - jekyll-remove-file-extension
+  - jekyll-resize
 
 defaults:
   - scope:
@@ -29,6 +30,14 @@ defaults:
       asset: true
   - scope:
       path: "lib"
+    values:
+      asset: true
+  - scope:
+      path: "Art"
+    values:
+      asset: true
+  - scope:
+      path: "cache"
     values:
       asset: true
 

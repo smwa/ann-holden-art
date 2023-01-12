@@ -1,0 +1,54 @@
+<section class="splide" aria-label="Art Carousel">
+  <div class="splide__track">
+		<ul class="splide__list">
+
+      {% for image in include.image_list %}
+        <li class="splide__slide" data-splide-hash="{{ image.title | slugify }}">
+          <div class="art-carousel__slide">
+            <div class="art-carousel__title">{{ image.title }}</div>
+            {% capture fullpath %}{{ site.baseurl }}/{{ include.image_root }}{{ image.file }}{% endcapture %}
+            <div class="art-carousel__image">
+              <img
+                alt="{{ image.title }}"
+                src="{{ fullpath | resize: '4x4>' }}"
+                data-splide-lazy-srcset="{{ fullpath | remove_file_extension | append: '.webp' }}, {{ fullpath }}"
+              />
+            </div>
+            <div class="art-carousel__description">{{ image.description }}</div>
+            {% if image.collection %}
+              <div class="art-carousel__collection">{{ image.collection }}</div>
+            {% endif %}
+          </div>
+        </li>
+      {% endfor %}
+
+		</ul>
+  </div>
+</section>
+
+<script>
+  let carousel = null;
+  let hasInteracted = false;
+
+  document.addEventListener("DOMContentLoaded", function () {
+
+    carousel = new Splide( '.splide', {
+      type: 'loop',
+      speed: 850,
+      autoplay: true,
+      interval: 10000,
+      lazyLoad: 'sequential',
+      keyboard: 'global',
+    } ).mount( window.splide.Extensions );
+
+    carousel.on('drag', () => {
+      if (hasInteracted) return;
+      hasInteracted = true;
+
+      const { Autoplay } = carousel.Components;
+      Autoplay.pause();
+    });
+
+  }, false);
+
+</script>

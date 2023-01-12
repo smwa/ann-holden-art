@@ -1,8 +1,12 @@
 - text: Paintings
+  navkey: paintings
   url: "/Paintings/"
 - text: Drawings
+  navkey: drawings
   url: "/Drawings/"
 - text: Portraits
+  navkey: portraits
   url: "/Portraits/"
-- text: The Artist
+- text: Ann Holder
+  navkey: artist
   url: "/Artist/"

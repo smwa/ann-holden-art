@@ -9,6 +9,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link rel="stylesheet" href="{{ 'lib/skeleton/skeleton.css' | relative_url }}" />
   <link rel="stylesheet" href="{{ 'assets/css/custom.css' | relative_url }}" />
+  <link rel="stylesheet" href="{{ 'lib/splide/css/splide.min.css' | relative_url }}" />
   <link rel="manifest" href="{{ 'manifest.json' | relative_url }}" />
 
   <title>{{ site.data.site.title }}</title>
@@ -43,15 +44,24 @@
       {% include picture.html url=site.data.site.logo title='Site logo' %}
     </a>
     {% for navlink in site.data.navigation %}
-    <a href="{{ navlink.url }}">{{ navlink.text }}</a>
+    <a
+      {% if page.navkey == navlink.navkey %}
+      class="navlink-active"
+      {% endif %}
+      href="{{ navlink.url }}"
+    >
+      {{ navlink.text }}
+    </a>
     {% endfor %}
     <img src="{{ site.data.site.logo | relative_url }}" style="width: 1em; opacity: 0%"
       title="{{ 'Site generated at ' | append: site.time }}" aria-hidden="true" alt="Site Logo" height="1000" width="1000" />
   </div>
-  <div class="sections" role="main">
+  <div role="main" class="main-content">
     {{ content }}
   </div>
   <script src="{{ 'lib/feather.min.js' | relative_url }}"></script>
+  <script src="{{ 'lib/splide/js/splide.min.js' | relative_url }}"></script>
+  <script src="{{ 'lib/splide/js/splide-extension-url-hash.min.js' | relative_url }}"></script>
   <script>
     feather.replace();
     {% if jekyll.environment != "development" %}
