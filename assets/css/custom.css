@@ -44,6 +44,10 @@ svg {
     stroke: #2c2c2c;
 }
 
+.splide__pagination__page.is-active {
+  background: #ccc;
+}
+
 .main-content {
   height: calc(100vh - 3rem);
 }
