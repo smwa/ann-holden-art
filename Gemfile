@@ -6,6 +6,9 @@ group :jekyll_plugins do
   gem 'jekyll-regex-replace'
   gem 'jekyll-remove-file-extension'
   gem 'jekyll-resize', git: 'https://github.com/MichaelCurrin/jekyll-resize'
+  gem 'mini_magick'
+  gem 'jekyll-minimagick'
+  gem 'fileutils'
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem

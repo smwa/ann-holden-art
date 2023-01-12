@@ -4,7 +4,7 @@ url: "https://aha.mechstack.dev" # the base hostname & protocol for your site, e
 webp:
   enabled: true
   quality: 75
-  img_dir: ["/assets/", "/Art/"]
+  img_dir: ["/assets/", "/photos/"]
   nested: true
   formats: [".jpeg", ".jpg", ".png", ".tiff", ".gif"]
   gifs: [".gif"]
@@ -33,7 +33,7 @@ defaults:
     values:
       asset: true
   - scope:
-      path: "Art"
+      path: "photos"
     values:
       asset: true
   - scope:
