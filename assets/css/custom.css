@@ -45,7 +45,7 @@ svg {
 }
 
 .splide__pagination__page.is-active {
-  background: #ccc;
+  background: #ccc !important;
 }
 
 .main-content {
