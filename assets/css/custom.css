@@ -104,3 +104,11 @@ svg {
 .art-carousel__collection {
   font-size: 0.76rem;
 }
+
+.artist-block {
+  max-width: 36em;
+}
+
+.sections > * > .artist-block {
+  height: initial;
+}

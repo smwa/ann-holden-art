@@ -4,4 +4,18 @@ layout: default
 navkey: artist
 ---
 
-Artist page
+<div class="sections">
+
+  <div>
+    <div class="artist-block">
+      {% for description in site.data.site.descriptions %}
+        <p>{{description}}</p>
+      {% endfor %}
+      <a href="mailto:{{site.data.site.email_address}}" class="center-content">
+        <i data-feather="mail"></i>
+        {{site.data.site.email_address}}
+      </a>
+    </div>
+  </div>
+
+</div>
