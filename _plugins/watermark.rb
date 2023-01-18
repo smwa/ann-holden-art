@@ -35,7 +35,7 @@ module Jekyll
         return
       end
       image = MiniMagick::Image.open(file)
-      result = image.composite(MiniMagick::Image.open('img/watermark-large.png')) do |c|
+      result = image.composite(MiniMagick::Image.open('img/watermark.png')) do |c|
         c.gravity "southeast"
       end
       result.write new_file
