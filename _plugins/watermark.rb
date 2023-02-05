@@ -31,9 +31,6 @@ module Jekyll
     end
 
     def watermark_image(site, file, new_file)
-      if (File.exist?(new_file) && File.mtime(new_file) > File.mtime(file))
-        return
-      end
       image = MiniMagick::Image.open(file)
       result = image.composite(MiniMagick::Image.open('img/watermark.png')) do |c|
         c.gravity "southeast"
