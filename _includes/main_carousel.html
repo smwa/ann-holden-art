@@ -3,13 +3,25 @@
 		<ul class="splide__list">
 
       {% for image in include.image_list %}
-        <li class="splide__slide" data-splide-hash="{{ image.title | slugify }}">
+
+        {% if image.title %}
+          <li class="splide__slide" data-splide-hash="{{ image.title | slugify }}">
+        {% else %}
+          <li class="splide__slide" data-splide-hash="{{ 'untitled-' | append: forloop.index }}"></li>
+        {% endif %}
+
           <div class="art-carousel__slide">
-            <div class="art-carousel__title">{{ image.title }}</div>
+            {% if image.title %}
+              <div class="art-carousel__title">{{ image.title }}</div>
+            {% endif %}
             {% capture fullpath %}{{ site.baseurl }}/{{ include.image_root }}{{ image.file }}{% endcapture %}
             <div class="art-carousel__image">
               <img
-                alt="{{ image.title }}"
+                {% if image.title %}
+                  alt="{{ image.title }}"
+                {% else %}
+                  alt="Untitled"
+                {% endif %}
                 src="{{ fullpath | resize: '4x4>' }}"
                 data-splide-lazy-srcset="{{ fullpath | remove_file_extension | append: '.webp' }}, {{ fullpath }}"
               />

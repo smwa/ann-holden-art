@@ -1,3 +1,3 @@
 #!/bin/env bash
 bundle install
-bundle exec jekyll serve -w --force_polling
+bundle exec jekyll serve --no-watch
