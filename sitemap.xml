@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    <url>
+      <loc>https://annholden.art/Drawings/index.html</loc>
+      <lastmod>2023-03-10T02:55:46+00:00</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>1.0</priority>
+      </url>
+  
+    <url>
+      <loc>https://annholden.art/Portraits/index.html</loc>
+      <lastmod>2023-03-10T02:55:46+00:00</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>1.0</priority>
+      </url>
+  
+    <url>
+      <loc>https://annholden.art/Artist/index.html</loc>
+      <lastmod>2023-03-10T02:55:46+00:00</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>1.0</priority>
+      </url>
+  
+    <url>
+      <loc>https://annholden.art/Paintings/index.html</loc>
+      <lastmod>2023-03-10T02:55:46+00:00</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>1.0</priority>
+      </url>
+  
+    <url>
+      <loc>https://annholden.art/</loc>
+      <lastmod>2023-03-10T02:55:46+00:00</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>1.0</priority>
+      </url>
+  
+</urlset>

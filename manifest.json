@@ -1,0 +1,27 @@
+{
+  "short_name": "Ann Holden",
+  "name": "Ann Holden",
+  "icons": [
+    {
+      "src": "/assets/img/themed-mask-icon.png",
+      "sizes": "192x192 256x256 512x512",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/assets/img/apple-mask-icon.svg",
+      "sizes": "192x192 256x256 512x512",
+      "purpose": "monochrome"
+    },
+    {
+      "src": "/assets/img/logo.png",
+      "sizes": "48x48 96x96 128x128 180x180 192x192 256x256",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#FFFFFF",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#212121",
+  "description": "A native of Oklahoma City, Ann Holden holds a BA from Smith College, Northampton, MA and an MFA in Painting from the Henry Radford Hope School of Fine Art, Indiana University, Bloomington, IN. She also studied at The School of the Art Institute of Chicago, Chautauqua Institute, NY, and has been an Artist-in-Residence at the Vermont Studio Center. Prominent teachers include Robert Barnes and Stanley Lewis. She was an Assistant Instructor at Indiana University Summer Institute in Florence, Italy, and was Adjunct Professor at Tokai University, Tokyo, Japan. Currently, she lives and maintains a studio in Oklahoma City."
+}
